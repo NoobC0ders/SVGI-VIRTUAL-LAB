@@ -1,97 +1,117 @@
 <!DOCTYPE html>
-
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/css/styles.css">
-    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <title>SVGI - Virtual Lab</title>
+    <link rel="stylesheet" href="./asset/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 
 <body>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <video width="480" height="360" controls>
-                <source src="./asset/videos/Virtual Lab _Digital Electronic.mp4" type="video/mp4">
-                <source src="./asset/videos/Virtual Lab _Digital Electronic.mp4" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
-            <video width="480" height="360" controls>
-                <source src="./asset/videos/3rdyrIE2 virtual lab demo.mp4" type="video/mp4">
-                <source src="./asset/videos/3rdyrIE2 virtual lab demo.mp4" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-    </div>
-
     <div class="container-fluid">
-        <div class="heroSection">
-            <div class="heroText">
-                <h2>Welcome To </br> Swami
-                    Vivekananda Group
-                    of Institute Virtual Lab</h2>
-                <p>In association with MHRD Virtual Lab</p>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="demo-video-modal" tabindex="-1" role="dialog"
+            aria-labelledby="demo-video-modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLongTitle">
+                            Demo Video
+                        </h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-12">
+                            <video width="100%" height="auto" controls>
+                                <source src="./asset/videos/Virtual Lab _Digital Electronic.mp4" type="video/mp4">
+                                <source src="./asset/videos/Virtual Lab _Digital Electronic.mp4" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col">
+                            <video width="100%" height="auto" controls>
+                                <source src="./asset/videos/3rdyrIE2 virtual lab demo.mp4" type="video/mp4">
+                                <source src="./asset/videos/3rdyrIE2 virtual lab demo.mp4" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-            <div class="hero-button" id="hero-btn-div">
-                <a href="./pages/svgilab.html">
-                    <p class="text" id="check-out">Check out SVGI Virtual Lab</p>
-                </a>
+        </div>
+        <!-- modal ends here -->
+
+        <div class="hero-section p-5">
+            <div class="logo">
+                <div class="logo-text mr-2">
+                    Swami Vivekananda Group Of Institutes
+                </div>
+                <img src="./asset/img/logo.png" alt="" srcset="">
+
+
             </div>
 
+            <div class="hero">
+                <p>
+                    <h1>Welcome To Swami Vivekananda
+                        Group of Institute’s Virtual Lab</h1>
+                    <h3 class="mt-3 mb-4">In association with MHRD Virtual Lab</h3>
+                </p>
 
-
-            <a href="http://www.vlab.co.in/broad-area-computer-science-and-engineering"> <button class="cse"
-                    title="Computer Science and Engineering" type="submit">CSE</button> </a>
-            <a href="http://www.vlab.co.in/broad-area-electronics-and-communications"> <button class="ece"
-                    title="Electronics & Communications Engineering" type="submit">ECE</button> </a>
-            <a href="http://www.vlab.co.in/broad-area-mechanical-engineering"> <button class="me"
-                    title="Mechanical Engineering" type="submit">ME</button> </a>
-            <a href="http://www.vlab.co.in/broad-area-chemical-engineering"> <button class="ce"
-                    title="Chemical Engineering" type="submit">CE</button> </a>
-            <a href="http://www.vlab.co.in/broad-area-electrical-engineering"> <button class="eee"
-                    title="Electrical Engineering" type="submit">EE</button> </a>
-
-
-
-
-
-
+                <a href="./pages/svgilab.html"> <button class="btn btn-blue"> Check out SVGI Virtual Lab </button> </a>
+                <button class="btn btn-border-line ml-5" data-toggle="modal" data-target="#demo-video-modal"> Sample
+                    Videos </button>
+            </div>
         </div>
+
+
+        <div class="row dept-section p-5">
+            <div class="col-12 heading mb-5">Departments:</div>
+            <div class="col dept-card-cse p-2 m-2">
+                <p class="m-5"> <a href="http://www.vlab.co.in/broad-area-computer-science-and-engineering"> Computer
+                        Science & Engineering Lab </a> </p>
+            </div>
+            <div class="col dept-card-ece p-2 m-2">
+                <p class="m-5"> <a href="http://www.vlab.co.in/broad-area-electronics-and-communications">Electronics
+                        and Comm. Lab </a></p>
+            </div>
+            <div class="col dept-card-me p-2 m-2">
+                <p class="m-5"> <a href="http://www.vlab.co.in/broad-area-mechanical-engineering"> Mechanical
+                        Engineering Lab </a></p>
+            </div>
+            <div class="col dept-card-eee p-2 m-2">
+                <p class="m-5"> <a href="http://www.vlab.co.in/broad-area-chemical-engineering"> Electrical Engineering
+                        Lab </a></p>
+            </div>
+            <div class="col dept-card-ce p-2 m-2">
+                <p class="m-5"> <a href="http://www.vlab.co.in/broad-area-electrical-engineering"> Chemical Engineering
+                        Lab </a></p>
+            </div>
+        </div>
+
     </div>
 
-    <div class="videos-link" id="videos-link">
-
-        <p>Sample Videos </p> <img src="./asset/img/linkbg/videos-icon.png">
-    </div>
-
-    <h1>Fullscreen Expanding Div</h1>
-
-    <div id="fsm_container" class="fsm-container">
-        <div class="fsm apple">
-            <i class="fa fa-apple"></i>
-            <h1 class="modal-content">Apple</h1>
-        </div>
-        <div class="fsm pied">
-            <i class="fa fa-pied-piper"></i>
-            <h1 class="modal-content">Pied Piper</h1>
-        </div>
-        <div class="fsm codepen">
-            <i class="fa fa-codepen"></i>
-            <h1 class="modal-content">CodePen</h1>
-        </div>
-        <div class="fsm google">
-            <i class="fa fa-google"></i>
-            <h1 class="modal-content">Google</h1>
-        </div>
-    </div>
 </body>
 <script src="./asset/js/app-min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+</script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </html>
