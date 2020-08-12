@@ -29,6 +29,7 @@ a {
 
 .hero-section {
     background: linear-gradient(90deg, #74ebd5 0%, #acb6e5 100%);
+    color: $black-35;
 
     .logo {
         height: auto;
@@ -104,6 +105,7 @@ a {
 
     .dept-card-cse {
         background: linear-gradient(90deg, #da22ff 0%, #9733ee 100%);
+
     }
 
     .dept-card-ece {
@@ -122,6 +124,15 @@ a {
         background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
     }
 
+    .dept-card-cse:hover,
+    .dept-card-ece:hover,
+    .dept-card-me:hover,
+    .dept-card-eee:hover,
+    .dept-card-ce:hover,
+        {
+        box-shadow: 1px 1px 5px black;
+    }
+
     .dept-card-cse,
     .dept-card-ece,
     .dept-card-me,
@@ -135,7 +146,7 @@ a {
         font-weight: bold;
         font-size: 24px;
         line-height: 45px;
-        color: #f0e6e6ea;
+        color: #f9f9f9;
         cursor: pointer;
         border-radius: 10px;
 
@@ -145,11 +156,12 @@ a {
             align-content: center;
             align-self: center;
             text-align: center;
+            padding: 10px;
         }
 
-        p:hover {
-            color: white;
-        }
+
+
+
     }
 }
 
